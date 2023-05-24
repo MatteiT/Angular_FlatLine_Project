@@ -1,0 +1,22 @@
+:root {
+    --orange-crayola: #e57a44ff;
+    --paynes-gray: #19647eff;
+    --verdigris: #28afb0ff;
+    --flax: #ffee93ff;
+    --mainBg: #fbfff1ff;
+    --black: #000000ff;
+    --fontTitle: 'Roboto', sans-serif;
+    --fontText: 'Open Sans', sans-serif;
+    --fontCode: 'Roboto Mono', monospace;
+    --fontLogo: 'Pacifico', cursive;
+    --fontFooter: 'Lobster', sans-serif;
+    --fontNav: 'Montserrat', sans-serif;
+    --fontButton: 'Roboto', sans-serif;
+    --homeBg: url('/assets/kitchen-equipement.jpg')
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
