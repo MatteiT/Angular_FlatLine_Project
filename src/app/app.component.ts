@@ -13,5 +13,4 @@ export class AppComponent {
     titleService.setTitle("Let Him Cook - Home ");
   }
 
-
 }

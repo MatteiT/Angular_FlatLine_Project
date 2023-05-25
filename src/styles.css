@@ -12,11 +12,14 @@
     --fontFooter: 'Lobster', sans-serif;
     --fontNav: 'Montserrat', sans-serif;
     --fontButton: 'Roboto', sans-serif;
-    --homeBg: url('/assets/kitchen-equipement.jpg')
+    --homeBg: url('/src/assets/wildtextures-wooden-chopping-board-texture.jpg');
   }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--fontText);
+    font-size: 1rem;
+    color: var(--black);
   }

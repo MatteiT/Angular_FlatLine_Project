@@ -1,10 +1,8 @@
-<div class="homeContainer">
-<h1>Home Page</h1>
-<button class="welcomeButton" (click)="onClickMe()">Enter the App</button>
-<div *ngIf="user">
-    {{ user.firstName }} {{ user.lastName }}
+
+  <div class="content">
+      <h1>Let Him Cook !</h1>
+      <h2>Let's cook together</h2>
+    <button class="welcomeButton" (click)="redirectToMainPage()">Enter the Kitchen</button>
+      <div *ngIf="user">
+        <h2>Welcome {{user.firstName + ' ' + user.lastName}}</h2>
   </div>
-
-
-<p>{{clickMessage}}</p>
-</div>

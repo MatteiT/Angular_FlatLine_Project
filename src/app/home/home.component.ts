@@ -1,22 +1,21 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
-  clickMessage = '';
-
   user = {
     firstName: 'John',
     lastName: 'Doe'
   };
 
-  onClickMe() {
-    this.clickMessage = 'Welcome to the App!';
+  constructor(private router: Router) { }
+
+  redirectToMainPage() {
+    this.router.navigate(['/main']);
   }
 
-
+  isHomePage = true;
 }
