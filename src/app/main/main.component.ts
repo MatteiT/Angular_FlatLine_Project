@@ -10,7 +10,9 @@ import { slideInUpAnimation } from 'src/animation';
 })
 export class MainComponent {
 
-  isHomePage = false;
+  constructor(private router : Router) { }
+
+  ngOnInit(): void { }
 
   prepareRouteTransition(outlet : any) {
     const animation = outlet.activatedRouteData['animation'] || {};

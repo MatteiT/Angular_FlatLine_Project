@@ -13,6 +13,8 @@ import { AboutComponent } from './about/about.component';
 import { Error404Component } from './error404/error404.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { LogoVideoComponent } from './logo-video/logo-video.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -28,6 +30,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     Error404Component,
     ContactComponent,
     NavbarComponent,
+    LogoVideoComponent,
+    DashboardComponent,
     
     ],
   imports: [

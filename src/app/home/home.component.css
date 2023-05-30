@@ -1,3 +1,95 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../../assets/woodTexture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--flax);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    margin: 2rem;
+}
+
+.userDash{
+    z-index: 20;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: var(--brownLetter);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+    background-color: var(--flax);
+    padding: 1rem;
+}
+
+.userDash:hover{
+    transform: translateY(4px);
+}
+
+.userDash:focus{
+    outline: none;
+}
+
+.userDash:active{
+    transform: translateY(4px);
+}
+
+.userDash i{
+    transition: all 0.2s ease-in-out;
+    list-style: none;
+}
+
+.userDash i:hover{
+    color: var(--green-bg);
+}
+
+.userName{
+    font-weight:lighter;
+    color: var(--dark);
+}
+
+
+video{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px){
+    video {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 400px){
+    video {
+        display: none;
+    }
+}
+
+.welcomeTitle{
+    font-size: 3rem;
+    color: var(--dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
 .welcomeButton{
     background-color: #4CAF50;
     border: none;
@@ -24,33 +116,3 @@
 .welcomeButton:focus{
     outline: none;
 }
-  .content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--verdigris);
-    border: 1px solid var(--black);
-    border-radius: 10px;
-    margin: 1rem;
-    padding: 1rem;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-h1{
-    font-family: var(--fontTitle);
-    font-size: 3rem;
-    color: var(--black);
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-    color: var(--flax);
-}
-
-h2{
-    font-family: var(--fontTitle);
-    font-size: 1rem;
-    color: var(--black);
-    text-align: center;
-    margin: 1rem;
-    padding: 1rem;
-} 

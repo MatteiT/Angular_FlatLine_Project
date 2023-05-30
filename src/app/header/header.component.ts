@@ -12,6 +12,11 @@ export class HeaderComponent {
 
   showComponent: boolean = false;
   
+  user = {
+    firstName: 'John',
+    lastName: 'Doe'
+  };
+    
 
   ngOnInit() {
     this.route.params.subscribe(params => {
