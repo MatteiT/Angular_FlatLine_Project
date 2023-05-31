@@ -3,28 +3,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url("../../assets/woodTexture.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.content{
+  }
+  
+  .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: var(--flax);
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-    margin: 2rem;
-}
-
-.userDash{
-    z-index: 20;
+    margin: 3rem;
+    max-width: 90%;
+    width: 800px;
+  }
+  
+  .userDash{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -36,83 +37,108 @@
     border-radius: 50%;
     background-color: var(--flax);
     padding: 1rem;
-}
-
-.userDash:hover{
+  }
+  
+  .userDash:hover{
     transform: translateY(4px);
-}
-
-.userDash:focus{
+  }
+  
+  .userDash:focus{
     outline: none;
-}
-
-.userDash:active{
+  }
+  
+  .userDash:active{
     transform: translateY(4px);
-}
-
-.userDash i{
+  }
+  
+  .userDash i{
     transition: all 0.2s ease-in-out;
     list-style: none;
-}
-
-.userDash i:hover{
+  }
+  
+  .userDash i:hover{
     color: var(--green-bg);
-}
-
-.userName{
+  }
+  
+  .userName{
     font-weight:lighter;
     color: var(--dark);
-}
-
-
-video{
-    width: 100%;
-    height: 100%;
-}
-
-@media screen and (max-width: 768px){
+  }
+  
+  @media screen and (max-width: 1200px){
     video {
-        display: none;
+      display: none;
     }
-}
-
-@media screen and (max-height: 400px){
+    
+    .content{
+      padding: 1rem;
+      margin: 1rem;
+      max-width: 90%;
+      width: 400px;
+    }
+  
+    .welcomeTitle{
+      font-size: 2rem;
+    }
+  
+    .welcomeButton{
+      font-size: 1rem;
+      padding: 10px 24px;
+    }
+  
+    .userDash{
+      padding: 0.5rem;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  
+  @media screen and (max-height: 800px){
     video {
-        display: none;
+      display: none;
     }
-}
 
-.welcomeTitle{
-    font-size: 3rem;
-    color: var(--dark);
-    font-weight: 700;
-    margin-bottom: 1rem;
-    text-align: center;
-}
+    .content{
+      padding: 1rem;
+      margin: 1rem;
+      max-width: 50%;
+      width: 200px;
+    }
 
-.welcomeButton{
+    .welcomeTitle{
+      font-size: 2rem;
+    }
+
+    .welcomeButton{
+      font-size: 1rem;
+    }
+  }
+  
+  .welcomeButton{
     background-color: #4CAF50;
     border: none;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-.welcomeButton:hover{
-    background-color: #3e8e41;
-}
-
-.welcomeButton:active{
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+  
+  .welcomeButton:hover{
     background-color: #3e8e41;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     transform: translateY(4px);
-}
-
-.welcomeButton:focus{
+  }
+  
+  .welcomeButton:active{
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(4px);
+  }
+  
+  .welcomeButton:focus{
     outline: none;
-}
+  }

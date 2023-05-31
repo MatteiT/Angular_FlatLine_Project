@@ -1,0 +1,21 @@
+<nav class="navbar" >
+  <div class="menu-icon" (click)="toggleSidebar()">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="linkList"  *ngIf="isSidebarCollapsed">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/main">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+      </li>
+    </ul>
+  </div>
+</nav>
