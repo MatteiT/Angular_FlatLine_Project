@@ -11,8 +11,12 @@ import { ErrorComponent } from './global/layout/error/error.component';
 import { AboutComponent } from './pages/about/about.component';
 import { Error404Component } from './global/layout/error404/error404.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './global/layout/navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 @NgModule({
@@ -32,7 +36,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

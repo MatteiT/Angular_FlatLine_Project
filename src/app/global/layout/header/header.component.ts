@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { APP_ROUTES } from 'src/routes';
+import { ROUTES } from 'src/routes';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +10,17 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  constructor() { }
-  public showNavbar: boolean = true;
+  constructor(private router: Router) {}
+
+  public readonly ROUTES = ROUTES;
   
+  private _appRoutes: string[] = [
+    APP_ROUTES.main,
+    APP_ROUTES.about,
+    APP_ROUTES.contact,
+    APP_ROUTES.notFound,
+  ];
+
   user = {
     firstName: 'John',
     lastName: 'Doe'
@@ -17,5 +28,11 @@ export class HeaderComponent {
     
 
   ngOnInit() {
+console.log(this.router.url);
   }
+
+  public get hasHeader(): boolean {
+    return this._appRoutes.includes(this.router.url);
+  }
+
   }
